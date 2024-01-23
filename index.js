@@ -28,24 +28,24 @@ let imgUrlAndDim = {
 console.log(imgUrlAndDim);
 
 // --6--
-const ingredientsListPaste = document.querySelectorAll('.ingredients-list-paste>li');
-console.log(ingredientsListPaste.length);
+const ingredientsListPasteItems = document.querySelectorAll('.ingredients-list-paste>li');
+console.log(ingredientsListPasteItems.length);
 
 // --7--
-const fourthEl = ingredientsListPaste[3];
+const fourthEl = ingredientsListPasteItems[3];
 console.log(fourthEl);
 console.log(fourthEl.innerText);
 
 // --8--
-const instructionsList = document.querySelectorAll(".instructions-list>li");
+const instructionsListItems = document.querySelectorAll(".instructions-list>li");
 const instructionItems = [];
-instructionsList.forEach((item, index) => {
-    let instructionItem = {
-        order: index + 1,
-        text: item.innerText
-    }
-    instructionItems.push(instructionItem);
-})
+instructionsListItems.forEach((item, index) => {
+  let instructionItem = {
+    order: index + 1,
+    text: item.innerText,
+  };
+  instructionItems.push(instructionItem);
+});
 console.log(instructionItems);
 
 
